@@ -54,6 +54,9 @@ namespace SortingAlgorithmVisualizer
 
         private void btnStart_Click(object sender, EventArgs e)
         {
+            // generate array if reset buttn has not been clicked
+            if (array == null) btnReset_Click(null, null);
+
             bgw = new BackgroundWorker();
             bgw.WorkerSupportsCancellation = true;
             bgw.DoWork += new DoWorkEventHandler(bgw_DoWork);
@@ -92,6 +95,8 @@ namespace SortingAlgorithmVisualizer
             }
             else
             {
+                if (bgw.IsBusy) return;
+
                 int numEntries = panel1.Width;
                 int maxVal = panel1.Height;
                 Paused = false;
@@ -131,32 +136,9 @@ namespace SortingAlgorithmVisualizer
             }
             catch (Exception)
             {
-
-                throw;
             }
         }
 
         #endregion
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
     }
 }

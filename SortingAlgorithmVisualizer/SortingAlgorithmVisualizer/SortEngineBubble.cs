@@ -41,13 +41,8 @@ namespace SortingAlgorithmVisualizer
             array[i] = array[i + 1];
             array[i + 1] = temp;
 
-            // remove old values display black background
-            g.FillRectangle(BlackBrush, i, 0, 1, maxVal);
-            g.FillRectangle(BlackBrush, v, 0, 1, maxVal);
-
-            // show new values
-            g.FillRectangle(WhiteBrush, i, maxVal-array[i], 1, maxVal);
-            g.FillRectangle(WhiteBrush, v, maxVal - array[v], 1, maxVal);
+            DrawBar(i, array[i]);
+            DrawBar(v, array[v]);
 
         }
 
@@ -59,6 +54,14 @@ namespace SortingAlgorithmVisualizer
             }
             return true;
             
+        }
+
+        private void DrawBar(int position, int height) 
+        {
+            // remove old values display black background
+            g.FillRectangle(BlackBrush, position, 0, 1, maxVal);
+            // show new values
+            g.FillRectangle(WhiteBrush, position, maxVal - array[position], 1, maxVal);
         }
 
         public void ReDraw()

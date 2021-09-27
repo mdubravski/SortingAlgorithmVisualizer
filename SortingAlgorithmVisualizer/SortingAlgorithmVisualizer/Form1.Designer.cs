@@ -82,7 +82,7 @@ namespace SortingAlgorithmVisualizer
             this.label1.Size = new System.Drawing.Size(50, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Algorithm";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+
             // 
             // comboBox1
             // 
@@ -91,7 +91,7 @@ namespace SortingAlgorithmVisualizer
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(197, 21);
             this.comboBox1.TabIndex = 2;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+
             // 
             // btnReset
             // 
@@ -113,7 +113,7 @@ namespace SortingAlgorithmVisualizer
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(776, 383);
             this.panel1.TabIndex = 4;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+
             // 
             // btnStart
             // 
@@ -149,7 +149,7 @@ namespace SortingAlgorithmVisualizer
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Sorting Algorithm Visiualizer";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
