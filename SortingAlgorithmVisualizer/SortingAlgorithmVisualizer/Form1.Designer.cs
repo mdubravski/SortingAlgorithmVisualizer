@@ -38,6 +38,7 @@ namespace SortingAlgorithmVisualizer
             this.btnReset = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnStart = new System.Windows.Forms.Button();
+            this.btnPause = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,7 +64,7 @@ namespace SortingAlgorithmVisualizer
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -124,11 +125,22 @@ namespace SortingAlgorithmVisualizer
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
+            // btnPause
+            // 
+            this.btnPause.Location = new System.Drawing.Point(435, 26);
+            this.btnPause.Name = "btnPause";
+            this.btnPause.Size = new System.Drawing.Size(133, 23);
+            this.btnPause.TabIndex = 6;
+            this.btnPause.Text = "Pause/Resume";
+            this.btnPause.UseVisualStyleBackColor = true;
+            this.btnPause.Click += new System.EventHandler(this.btnPause_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnPause);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnReset);
@@ -156,6 +168,7 @@ namespace SortingAlgorithmVisualizer
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.Button btnPause;
     }
 }
 

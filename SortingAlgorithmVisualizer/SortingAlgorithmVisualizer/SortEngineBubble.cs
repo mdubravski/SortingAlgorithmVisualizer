@@ -66,9 +66,6 @@ namespace SortingAlgorithmVisualizer
             throw new NotImplementedException();
         }
 
-        void ISortEngine.IsSorted()
-        {
-            throw new NotImplementedException();
-        }
+
     }
 }

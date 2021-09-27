@@ -10,7 +10,7 @@ namespace SortingAlgorithmVisualizer
     interface ISortEngine
     {
         void NextStep();
-        void IsSorted();
+        bool IsSorted();
         void ReDraw();
     }
 }
