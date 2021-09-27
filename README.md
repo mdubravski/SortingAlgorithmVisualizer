@@ -5,8 +5,8 @@ An implementation of a sorting algorithm visualization program in C#.
 ## Description
 
 An implementation of a sorting algorithm visualization program in C#.
-This projects creates the ISortEngine interface that allows for multiple subclasses of sorting algorithms to be created.
-Currently only bubble sort (SortEngineBubble.cs) is implemented.
+This project creates the ```ISortEngine``` interface that allows for multiple subclasses of sorting algorithms to be created.
+Currently only bubble sort (```SortEngineBubble.cs```) is implemented.
 The GUI is creaded utilizing Windows Forms.
 
 ## Authors
